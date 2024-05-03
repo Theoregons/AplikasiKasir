@@ -16,45 +16,46 @@
             <div></div>
         </div>
     </div> -->
-    
-    <div class="wrapper" id="wrapper">
-        <div class="form-wrapper sign-up">
-            <form>
-                <h1>Registrasi</h1>
-                <span class="mb-4">Gunakan email untuk registrasi</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Daftar</button>
-            </form>
-        </div>
-        <div class="form-wrapper sign-in">
-            <form>
-                <h1>Masuk</h1>
-                <!-- <div class="social-icons mb-4">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a> 
-                    Masuk dengan akun google 
-                </div> -->
-                <span class="mb-4">gunakan email dan password anda</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Lupa password?</a>
-                <button>Masuk</button>
-            </form>
-        </div>
-        <div class="toggle-wrapper">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Aplikasi Kasir</h1>
-                    <img src="stimata.png" alt="stimata" width="35%">
-                    <p>Masukkan data diri lengkap untuk dapat menggunakan semua fitur</p>
-                    <button class="hidden" id="login">Masuk</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Aplikasi Kasir</h1>
-                    <img src="stimata.png" alt="stimata" width="35%">
-                    <p>Daftarkan data diri anda untuk dapat menggunakan semua fitur</p>
-                    <button class="hidden" id="register">Daftar</button>
+    <div class="auth">
+        <div class="wrapper" id="wrapper">
+            <div class="form-wrapper sign-up">
+                <form>
+                    <h1>Registrasi</h1>
+                    <span class="mb-4">Gunakan email untuk registrasi</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Daftar</button>
+                </form>
+            </div>
+            <div class="form-wrapper sign-in">
+                <form>
+                    <h1>Masuk</h1>
+                    <!-- <div class="social-icons mb-4">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a> 
+                        Masuk dengan akun google 
+                    </div> -->
+                    <span class="mb-4">gunakan email dan password anda</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Lupa password?</a>
+                    <button>Masuk</button>
+                </form>
+            </div>
+            <div class="toggle-wrapper">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Aplikasi Kasir</h1>
+                        <img src="stimata.png" alt="stimata" width="35%">
+                        <p>Masukkan data diri lengkap untuk dapat menggunakan semua fitur</p>
+                        <button class="hidden" id="login">Masuk</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Aplikasi Kasir</h1>
+                        <img src="stimata.png" alt="stimata" width="35%">
+                        <p>Daftarkan data diri anda untuk dapat menggunakan semua fitur</p>
+                        <button class="hidden" id="register">Daftar</button>
+                    </div>
                 </div>
             </div>
         </div>
