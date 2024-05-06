@@ -71,9 +71,9 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 1468px;
-    max-width: 100%;
-    min-height: 680px;
+    width: 87%;
+    height: 87%;
+    max-width: 100%; 
 }
 
 .wrapper p{
@@ -89,15 +89,22 @@
 
 .wrapper a{
     color: #333;
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
     margin: 15px 0 10px;
+}
+
+.wrapper a:hover{
+    color: #370cd3;
+    font-size: 15px;
+    text-decoration: underline; 
+    font-weight: 500;
 }
 
 .wrapper button{
     background-color: #512da8;
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px 45px;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -124,10 +131,10 @@
 }
 
 .wrapper input{
-    background-color: #eee;
+    background-color: #f0f0f0;
     border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
+    margin: 10px 0;
+    padding: 15px 15px;
     font-size: 13px;
     border-radius: 8px;
     width: 100%;

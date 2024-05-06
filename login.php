@@ -1,3 +1,7 @@
+<?php 
+    require 'function.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,35 +15,37 @@
 </head>
 
 <body>
-    <!-- <div class="loadingio-spinner-rolling-nq4q5u6dq7r">
-        <div class="ldio-x2uulkbinbj">
-            <div></div>
-        </div>
-    </div> -->
     <div class="auth">
         <div class="wrapper" id="wrapper">
             <div class="form-wrapper sign-up">
                 <form>
                     <h1>Registrasi</h1>
                     <span class="mb-4">Gunakan email untuk registrasi</span>
-                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Nama">
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Password">
                     <button>Daftar</button>
                 </form>
             </div>
             <div class="form-wrapper sign-in">
-                <form>
+                <form method="post">
                     <h1>Masuk</h1>
                     <!-- <div class="social-icons mb-4">
                         <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a> 
                         Masuk dengan akun google 
                     </div> -->
-                    <span class="mb-4">gunakan email dan password anda</span>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <a href="#">Lupa password?</a>
-                    <button>Masuk</button>
+                    <span class="mb-4">gunakan username dan password anda <span id="hint"></span></span>
+                    <input type="text" placeholder="Username" name="username" required/>
+                    <input type="password" placeholder="Password" name="password" required/>
+                    <!-- <a href="#">Lupa password ?</a> -->
+                    <button type="submit" name="login">
+                        Masuk
+                        <!-- <div class="loadingio-spinner-rolling-nq4q5u6dq7r">
+                            <div class="ldio-x2uulkbinbj">
+                                <div></div>
+                            </div>
+                        </div> -->
+                    </button>
                 </form>
             </div>
             <div class="toggle-wrapper">
