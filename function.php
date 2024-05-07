@@ -14,9 +14,19 @@
         if($hitung > 0){
             $_SESSION['login'] = true;
             header('location:index.php');
-        }else{         
+        }else{
             echo '<script type="text/javascript"> alert("Username atau Password Salah!"); </script>';
         }
+    }
+
+    if(isset($_POST['register'])){
+        $email = htmlspecialchars($_POST["email"]);
+        $username = htmlspecialchars($_POST["username"]);
+        $password = htmlspecialchars($_POST["password"]);
+ 
+        $query = "insert into user values ('' , '$email',  '$username', '$password')";
+        
+        mysqli_query($koneksi, $query);
     }
 
 ?>
