@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/lib/codemirror.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/hint/show-hint.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/lint/lint.css?v=5.1.3">
-    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=3131047090ltr&server=1">
+    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=1415328009ltr&server=1">
     <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=5.1.3" media="print" id="printcss">
     <title>localhost / 127.0.0.1 | phpMyAdmin 5.1.3</title>
     <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=5.1.3"></script>
@@ -56,7 +56,7 @@
 
 <script data-cfasync="false" type="text/javascript">
 // <![CDATA[
-CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"id",server:"1",table:"",db:"",token:"6429217928354939634856444d4f6f5f",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Jelajahi",pma_text_left_default_tab:"Struktur",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.3",auth_type:"config",user:"root"});
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"id",server:"1",table:"",db:"",token:"58417767372973212d51354b396e2f67",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Jelajahi",pma_text_left_default_tab:"Struktur",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.3",auth_type:"config",user:"root"});
 var firstDayOfCalendar = '0';
 var themeImagePath = '.\/themes\/pmahomme\/img\/';
 var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
@@ -260,7 +260,7 @@ $(function() {
       </div>
       <div id="pma_navigation_tree" class="list_container synced highlight autoexpand">
 
-  <div class="pma_quick_warp"><div class="drop_list"><button title="Tabel terakhir" class="drop_button btn">Terbaru</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=kasir&table=produk">`kasir`.`produk`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=kasir&table=user">`kasir`.`user`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=perpustakaan&table=buku">`perpustakaan`.`buku`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=u5480206_kursusonline&table=voucher">`u5480206_kursusonline`.`voucher`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=users">`app`.`users`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=siswa">`app`.`siswa`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=guru">`app`.`guru`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=password_resets">`app`.`password_resets`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=pelajaran">`app`.`pelajaran`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=personal_access_tokens">`app`.`personal_access_tokens`</a></li></ul></div><div class="drop_list"><button title="Tabel favorit" class="drop_button btn">Favorit</button><ul id="pma_favorite_list"><li class="warp_link">Tidak ada tabel favorit terbaru.</li></ul></div><div class="clearfloat"></div></div>
+  <div class="pma_quick_warp"><div class="drop_list"><button title="Tabel terakhir" class="drop_button btn">Terbaru</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=kasir&table=pelanggan">`kasir`.`pelanggan`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=tikhealth&table=artikel">`tikhealth`.`artikel`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=tikhealth&table=gambar_background">`tikhealth`.`gambar_background`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=kasir&table=pesanan">`kasir`.`pesanan`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=kasir&table=produk">`kasir`.`produk`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=kasir&table=user">`kasir`.`user`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=perpustakaan&table=buku">`perpustakaan`.`buku`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=u5480206_kursusonline&table=voucher">`u5480206_kursusonline`.`voucher`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=users">`app`.`users`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=app&table=siswa">`app`.`siswa`</a></li></ul></div><div class="drop_list"><button title="Tabel favorit" class="drop_button btn">Favorit</button><ul id="pma_favorite_list"><li class="warp_link">Tidak ada tabel favorit terbaru.</li></ul></div><div class="clearfloat"></div></div>
 
 <div class="clearfloat"></div>
 
@@ -284,7 +284,7 @@ $(function() {
                   <div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="index.php&#x3F;route&#x3D;&#x25;2Fexport&amp;server&#x3D;1" class="config-form disableAjax">
   <input type="hidden" name="tab_hash" value="">
       <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="">
-    <input type="hidden" name="token" value="6429217928354939634856444d4f6f5f">
+    <input type="hidden" name="token" value="58417767372973212d51354b396e2f67">
   <input type="hidden" name="submit_save" value="Navi">
 <ul class="tabs responsivetable row">
       <li><a href="#Navi_panel">Panel navigasi</a></li>
@@ -561,8 +561,8 @@ $.extend(defaultValues, {
                     <span class="hide" id="instructions-1">
                         Press Enter to execute query                    </span>
                 </div>
-                                                            <div class="message history collapsed hide select"
-                            targetdb="kasir" targettable="user">
+                                                            <div class="message history collapsed hide"
+                            targetdb="kasir" targettable="pesanan">
                             <div class="action_content">
                     <span class="action collapse">
             Tampilkan
@@ -597,10 +597,580 @@ $.extend(defaultValues, {
                             : <span>Sesi saat ini</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `user`</span>
+                            <span class="query">ALTER TABLE `pesanan` DROP `id_user`;</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pesanan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pesanan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
                         </div>
                                             <div class="message history collapsed hide"
-                            targetdb="kasir" targettable="produk">
+                            targetdb="kasir" targettable="pelanggan">
                             <div class="action_content">
                     <span class="action collapse">
             Tampilkan
@@ -635,7 +1205,311 @@ $.extend(defaultValues, {
                             : <span>Sesi saat ini</span>
                     </span>
             </div>
-                            <span class="query">CREATE TABLE `kasir`.`produk` ( `id` INT NOT NULL AUTO_INCREMENT ,  `nama_produk` VARCHAR(100) NOT NULL ,  `deskripsi` TEXT NOT NULL ,  `harga` INT NOT NULL ,  `stock` INT NOT NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;</span>
+                            <span class="query">DELETE FROM pelanggan;</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
+                        </div>
+                                            <div class="message history collapsed hide"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">ALTER TABLE `pelanggan` ADD PRIMARY KEY(`id_pelanggan`);</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="tikhealth" targettable="gambar_background">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>tikhealth</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `gambar_background`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="tikhealth" targettable="artikel">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>tikhealth</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `artikel`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="kasir" targettable="pelanggan">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Tampilkan
+                    </span>
+                            <span class="action expand">
+            Buka
+                    </span>
+                            <span class="action requery">
+            Kueri ulang
+                    </span>
+                            <span class="action edit">
+            Ubah
+                    </span>
+                            <span class="action explain">
+            Jelaskan
+                    </span>
+                            <span class="action profiling">
+            Profil
+                    </span>
+                            <span class="action bookmark">
+            Bookmarks
+                    </span>
+                            <span class="text failed">
+            Kueri gagal
+                    </span>
+                            <span class="text targetdb">
+            Basis data
+                            : <span>kasir</span>
+                    </span>
+                            <span class="text query_time">
+            Waktu eksekusi kueri
+                            : <span>Sesi saat ini</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `pelanggan`</span>
                         </div>
                                                 </div><!-- console_message_container -->
             <div class="query_input">
