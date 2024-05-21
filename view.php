@@ -96,7 +96,7 @@
         <div class="p-4 w-100">
             <h2>Data Pesanan : <?= $idp; ?> </h2>
             <button type="button" class="btn btn-primary my-2   " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Tambah Pesanan
+                Tambah Barang
             </button>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -109,16 +109,16 @@
                         <form action="" method="POST">
                             <div class="modal-body"> 
                                 <div class="mb-3">
-                                    <label for="nama_produk" class="form-label">Pilih Pelanggan</label>
-                                    <select name="id_pelanggan" class="form-control" id="">
+                                    <label for="nama_produk" class="form-label">Pilih Barang</label>
+                                    <select name="id_produk" class="form-control" id="">
                                         <?php 
-                                            $getpelanggan = mysqli_query($koneksi, "SELECT * FROM pelanggan");
-                                            while($pl=mysqli_fetch_array($getpelanggan)){
-                                                $id_pelanggan = $pl['id_pelanggan'];
-                                                $nama_pelanggan = $pl['nama_pelanggan'];
-                                                $alamat = $pl['alamat']; 
+                                            $getproduk = mysqli_query($koneksi, "SELECT * FROM produk");
+                                            while($pl=mysqli_fetch_array($getproduk)){
+                                                $id_produk = $pl['id_produk'];
+                                                $nama_produk = $pl['nama_produk'];
+                                                $stock = $pl['stock']; 
                                         ?>
-                                        <option value="<?= $id_pelanggan; ?>"><?= $nama_pelanggan; ?> - <?= $alamat; ?></option>
+                                        <option value="<?= $id_produk; ?>"><?= $nama_produk; ?> - <?= $stock; ?></option>
 
                                         <?php
                                             }
