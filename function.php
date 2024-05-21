@@ -44,4 +44,34 @@
             header('location:stock.php');
         }
     }
+
+    if(isset($_POST['tambahpelanggan'])){
+        $nama_pelanggan = $_POST['nama_pelanggan'];
+        $notelp = $_POST['notelp'];
+        $alamat = $_POST['alamat']; 
+
+        $insert_pelanggan = mysqli_query($koneksi, "INSERT INTO pelanggan (nama_pelanggan, notelp, alamat) VALUES ('$nama_pelanggan', '$notelp', '$alamat')");
+
+        if($insert_pelanggan){
+            header('location:pelanggan.php');
+        }else{
+            echo '<script type="text/javascript"> alert("Gagal!"); </script>';
+            header('location:pelanggan.php');
+        }
+    }
+
+    if(isset($_POST['tambahpesanan'])){
+        $id_pelanggan = $_POST['id_pelanggan'];
+        $notelp = $_POST['notelp'];
+        $alamat = $_POST['alamat']; 
+
+        $insert_pelanggan = mysqli_query($koneksi, "INSERT INTO pesanan (id_pelanggan) VALUES ('$id_pelanggan')");
+
+        if($insert_pelanggan){
+            header('location:index.php');
+        }else{
+            echo '<script type="text/javascript"> alert("Gagal!"); </script>';
+            header('location:index.php');
+        }
+    }
 ?>

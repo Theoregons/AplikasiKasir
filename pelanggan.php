@@ -1,5 +1,6 @@
 <?php
-    require 'function.php';  
+    require 'function.php';
+    $pelanggan = mysqli_query($koneksi, "SELECT * FROM pelanggan");
 ?>
 
 <!DOCTYPE html>
@@ -86,41 +87,36 @@
             </div>
         </div>
         <div class="p-4 w-100">
-            <h2>Data Pesanan</h2>
+            <h2>Data Pelanggan</h2>
             <button type="button" class="btn btn-primary my-2   " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Tambah Pesanan
+                Tambah Pelanggan
             </button>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Tambah Data Pesanan </h1>
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Tambah Data Pelanggan </h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="" method="POST">
                             <div class="modal-body"> 
-                                <div class="mb-3">
-                                    <label for="nama_produk" class="form-label">Pilih Pelanggan</label>
-                                    <select name="id_pelanggan" class="form-control" id="">
-                                        <?php 
-                                            $getpelanggan = mysqli_query($koneksi, "SELECT * FROM pelanggan");
-                                            while($pl=mysqli_fetch_array($getpelanggan)){
-                                                $id_pelanggan = $pl['id_pelanggan'];
-                                                $nama_pelanggan = $pl['nama_pelanggan'];
-                                                $alamat = $pl['alamat']; 
-                                        ?>
-                                        <option value="<?= $id_pelanggan; ?>"><?= $nama_pelanggan; ?> - <?= $alamat; ?></option>
-
-                                        <?php
-                                            }
-                                        ?>
-                                    </select>
-                                </div>  
+                                    <div class="mb-3">
+                                        <label for="nama_produk" class="form-label">Nama Pelanggan</label>
+                                        <input type="text" id="nama_produk" class="form-control" name="nama_pelanggan">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="desc" class="form-label">Nomor Telepon</label>
+                                        <input type="number" id="desc" class="form-control" name="notelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="harga" class="form-label">Alamat</label>
+                                        <input type="text" id="harga" class="form-control" name="alamat">
+                                    </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                                <button type="submit" class="btn btn-primary" name="tambahpesanan">Submit</button>
+                                <button type="submit" class="btn btn-primary" name="tambahpelanggan">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -130,32 +126,25 @@
                 <table class="table table-hover w-100">
                     <thead>
                         <tr>
-                            <th scope="col">ID Pesanan</th>
-                            <th scope="col">Tanggal Pesan</th>
+                            <th scope="col">#</th>
                             <th scope="col">Nama Pelanggan</th>
-                            <th scope="col">Jumlah</th>
+                            <th scope="col">Nomor Telp</th>
+                            <th scope="col">Alamat</th>
                             <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php 
-                            $getpesanan = mysqli_query($koneksi, "SELECT * FROM pesanan p, pelanggan pl WHERE p.id_pelanggan = pl.id_pelanggan");
-                            while($p=mysqli_fetch_array($getpesanan)){
-                                $id_pesanan = $p['id_pesanan'];
-                                $tanggal = $p['tgl_pesan'];
-                                $nama_pelanggan = $p['nama_pelanggan'];
-                                $alamat = $p['alamat'];
-                          ?>
-                            <tr> 
-                                <td><?= $id_pesanan; ?></td>
-                                <td><?= $tanggal; ?></td> 
-                                <td><?= $nama_pelanggan; ?> - <?= $alamat; ?></td> 
-                                <td>Jumlah</td> 
-                                <td><a href="view.php?idp=<?=$id_pesanan;?>" class="btn btn-primary">Tampilkan</a> | <a href="" class="btn btn-danger">Delete</a></td> 
-                            </tr>  
-                          <?php 
-                            }
-                          ?>
+                        <?php
+                        $i = 1;
+                        foreach ($pelanggan as $plg) :
+                        ?>
+                            <tr>
+                                <th scope="row"><?= $i; ?></th>
+                                <td><?= $plg['nama_pelanggan']; ?></td>
+                                <td><?= $plg['notelp']; ?></td>
+                                <td><?= $plg['alamat']; ?></td> 
+                            </tr> 
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
 

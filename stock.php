@@ -1,5 +1,6 @@
 <?php
-    require 'function.php';  
+    require 'function.php';
+    $barang = mysqli_query($koneksi, "SELECT * FROM produk");
 ?>
 
 <!DOCTYPE html>
@@ -86,41 +87,40 @@
             </div>
         </div>
         <div class="p-4 w-100">
-            <h2>Data Pesanan</h2>
+            <h2>Stok Barang</h2>
             <button type="button" class="btn btn-primary my-2   " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Tambah Pesanan
+                Tambah Produk
             </button>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Tambah Data Pesanan </h1>
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Tambah Data Order </h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="" method="POST">
                             <div class="modal-body"> 
-                                <div class="mb-3">
-                                    <label for="nama_produk" class="form-label">Pilih Pelanggan</label>
-                                    <select name="id_pelanggan" class="form-control" id="">
-                                        <?php 
-                                            $getpelanggan = mysqli_query($koneksi, "SELECT * FROM pelanggan");
-                                            while($pl=mysqli_fetch_array($getpelanggan)){
-                                                $id_pelanggan = $pl['id_pelanggan'];
-                                                $nama_pelanggan = $pl['nama_pelanggan'];
-                                                $alamat = $pl['alamat']; 
-                                        ?>
-                                        <option value="<?= $id_pelanggan; ?>"><?= $nama_pelanggan; ?> - <?= $alamat; ?></option>
-
-                                        <?php
-                                            }
-                                        ?>
-                                    </select>
-                                </div>  
+                                    <div class="mb-3">
+                                        <label for="nama_produk" class="form-label">Nama Produk</label>
+                                        <input type="text" id="nama_produk" class="form-control" name="nama_produk">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="desc" class="form-label">Deskripsi</label>
+                                        <input type="text" id="desc" class="form-control" name="deskripsi">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="harga" class="form-label">Harga</label>
+                                        <input type="number" id="harga" class="form-control" name="harga">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="stock" class="form-label">Stok Barang</label>
+                                        <input type="text" id="stock" class="form-control" name="stock">
+                                    </div> 
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                                <button type="submit" class="btn btn-primary" name="tambahpesanan">Submit</button>
+                                <button type="submit" class="btn btn-primary" name="tambahproduk">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -130,32 +130,26 @@
                 <table class="table table-hover w-100">
                     <thead>
                         <tr>
-                            <th scope="col">ID Pesanan</th>
-                            <th scope="col">Tanggal Pesan</th>
-                            <th scope="col">Nama Pelanggan</th>
-                            <th scope="col">Jumlah</th>
-                            <th scope="col">Aksi</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Nama Produk</th>
+                            <th scope="col">Deskripsi</th>
+                            <th scope="col">Harga</th>
+                            <th scope="col">Stok</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php 
-                            $getpesanan = mysqli_query($koneksi, "SELECT * FROM pesanan p, pelanggan pl WHERE p.id_pelanggan = pl.id_pelanggan");
-                            while($p=mysqli_fetch_array($getpesanan)){
-                                $id_pesanan = $p['id_pesanan'];
-                                $tanggal = $p['tgl_pesan'];
-                                $nama_pelanggan = $p['nama_pelanggan'];
-                                $alamat = $p['alamat'];
-                          ?>
-                            <tr> 
-                                <td><?= $id_pesanan; ?></td>
-                                <td><?= $tanggal; ?></td> 
-                                <td><?= $nama_pelanggan; ?> - <?= $alamat; ?></td> 
-                                <td>Jumlah</td> 
-                                <td><a href="view.php?idp=<?=$id_pesanan;?>" class="btn btn-primary">Tampilkan</a> | <a href="" class="btn btn-danger">Delete</a></td> 
-                            </tr>  
-                          <?php 
-                            }
-                          ?>
+                        <?php
+                        $i = 1;
+                        foreach ($barang as $brg) :
+                        ?>
+                            <tr>
+                                <th scope="row"><?= $i; ?></th>
+                                <td><?= $brg['nama_produk']; ?></td>
+                                <td><?= $brg['deskripsi']; ?></td>
+                                <td><?= $brg['harga']; ?></td>
+                                <td><?= $brg['stock']; ?></td>
+                            </tr> 
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
 

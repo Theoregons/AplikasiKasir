@@ -1,5 +1,13 @@
 <?php
-    require 'function.php';  
+    require 'function.php';
+    $idp = $_GET['idp'];
+
+    if(isset($_GET['idp'])){
+        $idp = $_GET['idp'];
+    }else{
+        header('location:index.php');
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -86,7 +94,7 @@
             </div>
         </div>
         <div class="p-4 w-100">
-            <h2>Data Pesanan</h2>
+            <h2>Data Pesanan : <?= $idp; ?> </h2>
             <button type="button" class="btn btn-primary my-2   " data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Tambah Pesanan
             </button>
